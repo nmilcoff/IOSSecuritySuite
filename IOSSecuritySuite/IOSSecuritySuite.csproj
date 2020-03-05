@@ -56,11 +56,6 @@
     <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="..\iOS Swift Binding\Release-fat\IOSSecuritySuite.framework">
-      <Kind>Framework</Kind>
-    </NativeReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="NuGet.Build.Tasks.Pack">
       <Version>5.4.0</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -69,6 +64,11 @@
     <PackageReference Include="Xamarin.iOS.SwiftRuntimeSupport">
       <Version>0.2.0</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="Native References\IOSSecuritySuite.framework">
+      <Kind>Framework</Kind>
+    </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
