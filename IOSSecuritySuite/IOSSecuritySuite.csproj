@@ -11,6 +11,18 @@
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>NativeLibrary</AssemblyName>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>IOSSecuritySuite</PackageId>
+    <PackageVersion>1.5.0</PackageVersion>
+    <Authors>Nico Milcoff</Authors>
+    <Copyright>Copyright (c) 2020 nmilcoff</Copyright>
+    <PackageIconUrl>https://raw.githubusercontent.com/nmilcoff/IOSSecuritySuite/master/Assets/logo.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/nmilcoff/IOSSecuritySuite/blob/master/LICENSE</PackageLicenseUrl>
+    <Owners>Nico Milcoff</Owners>
+    <PackageProjectUrl>https://github.com/nmilcoff/IOSSecuritySuite</PackageProjectUrl>
+    <Summary>Xamarin.iOS bindings for the IOSSecuritySuite swift library</Summary>
+    <Title>IOSSecuritySuite</Title>
+    <Description>Xamarin.iOS bindings for the IOSSecuritySuite swift library, an advanced and easy-to-use platform security &amp; anti-tampering library written in pure Swift! If you are developing for iOS and you want to protect your app according to the OWASP MASVS standard, chapter v8, then this library could save you a lot of time.</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
