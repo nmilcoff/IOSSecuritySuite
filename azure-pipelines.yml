@@ -22,7 +22,7 @@ pr:
 pool:
   name: Azure Pipelines
   demands: msbuild
-  vmImage: windows-latest
+  vmImage: macOS-latest
 
 name: 1.5.0$(rev:.r)
 
