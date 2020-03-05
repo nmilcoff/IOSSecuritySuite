@@ -67,8 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <NativeReference Include="Native References\IOSSecuritySuite.framework">
-      <Kind>Framework</Kind>
+      <Kind>Framework</Kind> 
     </NativeReference>
   </ItemGroup>
+    <Target Name="_RemoveNativeReferencesManifest" AfterTargets="BuiltProjectOutputGroup">
+      <ItemGroup>
+        <_BuiltProjectOutputGroupOutputIntermediate Remove="$(OutDir)$(_DeploymentTargetApplicationManifestFileName)" />
+        <BuiltProjectOutputGroupOutput Remove="$(ProjectDir)$(OutDir)$(_DeploymentTargetApplicationManifestFileName)" />
+      </ItemGroup>
+    </Target>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
