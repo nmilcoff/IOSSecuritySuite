@@ -2,6 +2,8 @@
 
 This repository contains Xamarin.iOS bindings for the [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite) swift library.
 
+🔒📌 Note: I highly encourage you to install [BreachDetector](https://github.com/nmilcoff/BreachDetector) instead, which will allow you to work in a cross platform way. 
+
 [![Build status](https://dev.azure.com/nicolasmilcoff/IOSSecuritySuite/_apis/build/status/nmilcoff.IOSSecuritySuite)](https://dev.azure.com/nicolasmilcoff/IOSSecuritySuite/_build/latest?definitionId=2)
 [![NuGet](https://img.shields.io/nuget/v/IOSSecuritySuite.svg?label=NuGet)](https://www.nuget.org/packages/IOSSecuritySuite)
 
